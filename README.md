@@ -47,20 +47,20 @@ VPTQ : codes for VPTQ
 - 그리고 terminal 에 ./run_vptq.sh 입력
 
 '''
-    v=4
-    c=4096 
-    ...
-    --vector_lens -1 ${v} \
-    --num_centroids -1 ${c} \
-    ...
-    --npercent 0 \
-    --num_res_centroids -1 -1 \
-    --group_num 4 \
-    ...
-    --vector_quant_dim out \
-    --enable_transpose True \
-    --bitwidth 8 \
-    ...
+v=4
+c=4096 
+...
+--vector_lens -1 ${v} \
+--num_centroids -1 ${c} \
+...
+--npercent 0 \
+--num_res_centroids -1 -1 \
+--group_num 4 \
+...
+--vector_quant_dim out \
+--enable_transpose True \
+--bitwidth 8 \
+...
 '''
 
 
@@ -75,18 +75,18 @@ VPTQ : codes for VPTQ
 - bitwidth = 16 (no codebook quantization)
 
 '''
-    v=6
-    c=4096 
-    ...
-    --vector_lens 4 ${v} \
-    --num_centroids 4096 ${c} \
-    ...
-    --npercent 1 \
-    --num_res_centroids -1 -1 \
-    --group_num 16 \
-    ...
-    --vector_quant_dim out \
-    --enable_transpose True \
-    --bitwidth 16 \
-    ...
+v=6
+c=4096 
+...
+--vector_lens 4 ${v} \
+--num_centroids 4096 ${c} \
+...
+--npercent 1 \
+--num_res_centroids -1 -1 \
+--group_num 16 \
+...
+--vector_quant_dim out \
+--enable_transpose True \
+--bitwidth 16 \
+...
 '''
