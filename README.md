@@ -43,7 +43,7 @@ num_gpu=3
 5. vector_quant_dim (in 또는 out) : VQ dimension 정하기
 > in = ich 방향으로 벡터 묶기 / out = och 방향으로 벡터 묶기
 6. enable_transpose (bool) : ich 방향으로 벡터를 묶으면 enable_transpose = False, och 방향으로 묶으면 True 로 두기
-7. bitwidth (int) : codebook quantize 를 몇비트로 할지 정하기 (16으로 두면 codebook quantization 이 실행되지 않는다)
+7. bitwidth (int) : codebook quantize 를 몇 비트로 할지 정하기 (16으로 두면 codebook quantization 이 실행되지 않는다)
 
 ---
 
@@ -77,7 +77,7 @@ c=4096
 - residual quantization 기능 끄기 (num_red_centrodis 를 -1 -1 로 세팅)
 - number of groups = 16
 - quantization dimension = och (vector_quant_dim = out & enable_transpose = True 로 두기)
-- bitwidth = 16 (codebook quantization 실행 안 함)
+- bitwidth = 16 (codebook quantization 실행 안함)
 
 ```
 v=6
@@ -98,7 +98,7 @@ c=4096
 
 ## Temrinal 에 나오는 결과 (성공적으로 VPTQ 가 작동할 때)
 - {} <= 중괄호 안에 있는 내용은 HJ가 적어둔 comment 이다. 실제 실행시킬때는 terminal 에 나오지 않는다.
-- 아래처럼 temrinal 에 뜨면 quantization 이 잘 진행될것이다.
+- 아래처럼 temrinal 에 뜨면 quantization 이 잘 진행될 것이다.
 
 ```
 (vptq) sslunder52@pim-gpu06:/home/sslunder52/project/Advaced_VPTQ/02_script$ ./run_vptq.sh {script 파일 실행!}
