@@ -1,0 +1,23 @@
+name: vptq-algo
+channels:
+  - conda-forge
+  - nvidia
+  - rapidsai
+dependencies:
+  - python=3.10
+  - ninja
+  - cuml=23.12
+  - pip
+  - pip:
+    - torch==2.5.1
+    - torchvision
+    - torchaudio
+    - --extra-index-url https://download.pytorch.org/whl/cu121
+    - accelerate
+    - setuptools
+    - wheel
+    - ninja
+    - transformers>=4.45
+    - datasets
+    - tensorboard
+    - sentence_transformers

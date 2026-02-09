@@ -1,0 +1,53 @@
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 308/308 [15:17<00:00,  2.98s/it]
+[Eval] Perplexity: 32.1371
+📊 Baseline Perplexity: 32.1371
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 128001}.
+❌ Training failed: Input tensor data type is not supported for NCCL process group: Short
+Traceback (most recent call last):
+  File "/home/sslunder52/project/Advaced_VPTQ/03_codes/LoRA_Finetuning/LoRA_VPTQ_Trainer.py", line 523, in <module>
+    main()
+  File "/home/sslunder52/project/Advaced_VPTQ/03_codes/LoRA_Finetuning/LoRA_VPTQ_Trainer.py", line 506, in main
+    trainer.train()
+  File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/transformers/trainer.py", line 2325, in train
+    return inner_training_loop(
+  File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/transformers/trainer.py", line 2480, in _inner_training_loop
+    model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+  File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/accelerate/accelerator.py", line 1559, in prepare
+    result = tuple(
+  File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/accelerate/accelerator.py", line 1560, in <genexpr>
+    self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+  File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/accelerate/accelerator.py", line 1402, in _prepare_one
+    return self.prepare_model(obj, device_placement=device_placement)
+  File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/accelerate/accelerator.py", line 1823, in prepare_model
+    model = torch.nn.parallel.DistributedDataParallel(
+  File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+    _sync_module_states(
+  File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/torch/distributed/utils.py", line 317, in _sync_module_states
+    _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+  File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/torch/distributed/utils.py", line 328, in _sync_params_and_buffers
+    dist._broadcast_coalesced(
+TypeError: Input tensor data type is not supported for NCCL process group: Short
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/sslunder52/project/Advaced_VPTQ/03_codes/LoRA_Finetuning/LoRA_VPTQ_Trainer.py", line 523, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/sslunder52/project/Advaced_VPTQ/03_codes/LoRA_Finetuning/LoRA_VPTQ_Trainer.py", line 506, in main
+[rank0]:     trainer.train()
+[rank0]:   File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/transformers/trainer.py", line 2325, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/transformers/trainer.py", line 2480, in _inner_training_loop
+[rank0]:     model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+[rank0]:   File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/accelerate/accelerator.py", line 1559, in prepare
+[rank0]:     result = tuple(
+[rank0]:   File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/accelerate/accelerator.py", line 1560, in <genexpr>
+[rank0]:     self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+[rank0]:   File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/accelerate/accelerator.py", line 1402, in _prepare_one
+[rank0]:     return self.prepare_model(obj, device_placement=device_placement)
+[rank0]:   File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/accelerate/accelerator.py", line 1823, in prepare_model
+[rank0]:     model = torch.nn.parallel.DistributedDataParallel(
+[rank0]:   File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+[rank0]:     _sync_module_states(
+[rank0]:   File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/torch/distributed/utils.py", line 317, in _sync_module_states
+[rank0]:     _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+[rank0]:   File "/home/sslunder52/anaconda3/envs/vptq_loraft/lib/python3.10/site-packages/torch/distributed/utils.py", line 328, in _sync_params_and_buffers
+[rank0]:     dist._broadcast_coalesced(
+[rank0]: TypeError: Input tensor data type is not supported for NCCL process group: Short
