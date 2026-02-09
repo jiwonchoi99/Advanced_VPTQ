@@ -288,7 +288,7 @@ class PerplexityCallback(TrainerCallback):
 # -------------------------------
 def main():
     if not dist.is_initialized():
-        dist.init_process_group(backend="nccl")
+        dist.init_process_group()
 
     args = parse_args()
     
@@ -309,7 +309,8 @@ def main():
         print("📥 Loading VPTQ quantized model and tokenizer...")
     
     # Load tokenizer + processor from original HF model
-    tokenizer = AutoTokenizer.from_pretrained(args.model_name, use_fast=True, trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained(args.quantized_model_path, use_fast=True, trust_remote_code=True)
+
 
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token

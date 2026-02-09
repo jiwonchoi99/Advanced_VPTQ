@@ -1,0 +1,130 @@
+{
+  "os":  "Linux-5.15.0-67-generic-x86_64-with-glibc2.31",
+  "python":  "CPython 3.10.18",
+  "startedAt":  "2026-02-09T06:14:30.219598Z",
+  "args":  [
+    "--use_multi_gpu",
+    "--model_name",
+    "meta-llama/Llama-3.1-8B",
+    "--quantized_model_path",
+    "/home/sslunder52/project/vptq_transposed/01_outputs/Llama-3.1-8B/test6_PackedModel/v6_c8192_b16_och/2026-02-08-21-31-20/packed_model",
+    "--dataset_name",
+    "wikitext",
+    "--dataset_config",
+    "wikitext-2-raw-v1",
+    "--output_dir",
+    "../01_outputs/llama3-1-8B-wikitext2-lora-finetuned",
+    "--run_name",
+    "llama3-1-8B-wikitext2-lora-finetuned",
+    "--max_length",
+    "4096",
+    "--batch_size",
+    "4",
+    "--num_epochs",
+    "3",
+    "--learning_rate",
+    "2e-4",
+    "--eval_steps",
+    "200",
+    "--save_steps",
+    "200",
+    "--save_total_limit",
+    "10",
+    "--lora_r",
+    "16",
+    "--lora_alpha",
+    "32",
+    "--lora_dropout",
+    "0.1",
+    "--gradient_checkpointing",
+    "--world_size",
+    "2",
+    "--master_addr",
+    "localhost",
+    "--master_port",
+    "12355"
+  ],
+  "program":  "/home/sslunder52/project/Advaced_VPTQ/03_codes/LoRA_Finetuning/LoRA_VPTQ_Trainer.py",
+  "codePath":  "03_codes/LoRA_Finetuning/LoRA_VPTQ_Trainer.py",
+  "codePathLocal":  "LoRA_VPTQ_Trainer.py",
+  "git":  {
+    "commit":  "3e36c06fed46c351afe76d5dd9ef55bdfef7114c"
+  },
+  "email":  "hyunjong0127@gmail.com",
+  "root":  "/home/sslunder52/project/Advaced_VPTQ/03_codes/LoRA_Finetuning",
+  "host":  "pim-gpu06",
+  "executable":  "/home/sslunder52/anaconda3/envs/lora/bin/python",
+  "cpu_count":  64,
+  "cpu_count_logical":  128,
+  "gpu":  "NVIDIA A100X",
+  "gpu_count":  8,
+  "disk":  {
+    "/":  {
+      "total":  "943467524096",
+      "used":  "800998162432"
+    }
+  },
+  "memory":  {
+    "total":  "1081823793152"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100X",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-be11dcad-233f-ed88-9811-0ea4d11bb1bf"
+    },
+    {
+      "name":  "NVIDIA A100X",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-40e7c3e2-4924-a3c4-7706-7dce6486a09c"
+    },
+    {
+      "name":  "NVIDIA A100X",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-e994ef54-c082-2a21-061f-fd7b8c3998b3"
+    },
+    {
+      "name":  "NVIDIA A100X",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-059c126f-ff31-0513-5bb0-79635ae899c5"
+    },
+    {
+      "name":  "NVIDIA A100X",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-1c198c05-8602-f94a-d49f-68ef842af3a6"
+    },
+    {
+      "name":  "NVIDIA A100X",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-1156a15e-3ae3-84ca-d3d1-688ed054dc30"
+    },
+    {
+      "name":  "NVIDIA A100X",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-9f9d726e-a3fb-ba0d-6869-a348189c532a"
+    },
+    {
+      "name":  "NVIDIA A100X",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-ebb6a65e-c4c9-d9ad-b6d6-323fe24583ba"
+    }
+  ],
+  "cudaVersion":  "12.5",
+  "writerId":  "mmatg4q1f49jmz9usn8ebl2ygo496h49"
+}

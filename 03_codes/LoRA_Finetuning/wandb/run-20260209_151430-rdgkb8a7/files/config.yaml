@@ -1,0 +1,6012 @@
+_name_or_path:
+    value: /home/sslunder52/project/vptq_transposed/01_outputs/Llama-3.1-8B/test6_PackedModel/v6_c8192_b16_och/2026-02-08-21-31-20/packed_model
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            mmatg4q1f49jmz9usn8ebl2ygo496h49:
+                args:
+                    - --use_multi_gpu
+                    - --model_name
+                    - meta-llama/Llama-3.1-8B
+                    - --quantized_model_path
+                    - /home/sslunder52/project/vptq_transposed/01_outputs/Llama-3.1-8B/test6_PackedModel/v6_c8192_b16_och/2026-02-08-21-31-20/packed_model
+                    - --dataset_name
+                    - wikitext
+                    - --dataset_config
+                    - wikitext-2-raw-v1
+                    - --output_dir
+                    - ../01_outputs/llama3-1-8B-wikitext2-lora-finetuned
+                    - --run_name
+                    - llama3-1-8B-wikitext2-lora-finetuned
+                    - --max_length
+                    - "4096"
+                    - --batch_size
+                    - "4"
+                    - --num_epochs
+                    - "3"
+                    - --learning_rate
+                    - "2e-4"
+                    - --eval_steps
+                    - "200"
+                    - --save_steps
+                    - "200"
+                    - --save_total_limit
+                    - "10"
+                    - --lora_r
+                    - "16"
+                    - --lora_alpha
+                    - "32"
+                    - --lora_dropout
+                    - "0.1"
+                    - --gradient_checkpointing
+                    - --world_size
+                    - "2"
+                    - --master_addr
+                    - localhost
+                    - --master_port
+                    - "12355"
+                codePath: 03_codes/LoRA_Finetuning/LoRA_VPTQ_Trainer.py
+                codePathLocal: LoRA_VPTQ_Trainer.py
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "12.5"
+                disk:
+                    /:
+                        total: "943467524096"
+                        used: "800998162432"
+                email: hyunjong0127@gmail.com
+                executable: /home/sslunder52/anaconda3/envs/lora/bin/python
+                git:
+                    commit: 3e36c06fed46c351afe76d5dd9ef55bdfef7114c
+                gpu: NVIDIA A100X
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100X
+                      uuid: GPU-be11dcad-233f-ed88-9811-0ea4d11bb1bf
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100X
+                      uuid: GPU-40e7c3e2-4924-a3c4-7706-7dce6486a09c
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100X
+                      uuid: GPU-e994ef54-c082-2a21-061f-fd7b8c3998b3
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100X
+                      uuid: GPU-059c126f-ff31-0513-5bb0-79635ae899c5
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100X
+                      uuid: GPU-1c198c05-8602-f94a-d49f-68ef842af3a6
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100X
+                      uuid: GPU-1156a15e-3ae3-84ca-d3d1-688ed054dc30
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100X
+                      uuid: GPU-9f9d726e-a3fb-ba0d-6869-a348189c532a
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100X
+                      uuid: GPU-ebb6a65e-c4c9-d9ad-b6d6-323fe24583ba
+                host: pim-gpu06
+                memory:
+                    total: "1081823793152"
+                os: Linux-5.15.0-67-generic-x86_64-with-glibc2.31
+                program: /home/sslunder52/project/Advaced_VPTQ/03_codes/LoRA_Finetuning/LoRA_VPTQ_Trainer.py
+                python: CPython 3.10.18
+                root: /home/sslunder52/project/Advaced_VPTQ/03_codes/LoRA_Finetuning
+                startedAt: "2026-02-09T06:14:30.219598Z"
+                writerId: mmatg4q1f49jmz9usn8ebl2ygo496h49
+        m:
+            - "1": train/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.10.18
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 75
+                - 98
+                - 105
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 75
+                - 98
+                - 105
+            "3":
+                - 7
+                - 13
+                - 19
+                - 66
+            "4": 3.10.18
+            "5": 0.22.3
+            "6": 4.57.1
+            "9":
+                "1": transformers_trainer
+            "12": 0.22.3
+            "13": linux-x86_64
+accelerator_config:
+    value:
+        dispatch_batches: null
+        even_batches: true
+        gradient_accumulation_kwargs: null
+        non_blocking: false
+        split_batches: false
+        use_seedable_sampler: true
+adafactor:
+    value: false
+adam_beta1:
+    value: 0.9
+adam_beta2:
+    value: 0.999
+adam_epsilon:
+    value: 1e-08
+add_cross_attention:
+    value: false
+architectures:
+    value:
+        - LlamaForCausalLM
+attention_bias:
+    value: false
+attention_dropout:
+    value: 0
+auto_find_batch_size:
+    value: false
+average_tokens_across_devices:
+    value: true
+bad_words_ids:
+    value: null
+batch_eval_metrics:
+    value: false
+begin_suppress_tokens:
+    value: null
+bf16:
+    value: true
+bf16_full_eval:
+    value: false
+bos_token_id:
+    value: 128000
+chunk_size_feed_forward:
+    value: 0
+cross_attention_hidden_size:
+    value: null
+data_seed:
+    value: null
+dataloader_drop_last:
+    value: false
+dataloader_num_workers:
+    value: 4
+dataloader_persistent_workers:
+    value: false
+dataloader_pin_memory:
+    value: true
+dataloader_prefetch_factor:
+    value: null
+ddp_backend:
+    value: null
+ddp_broadcast_buffers:
+    value: null
+ddp_bucket_cap_mb:
+    value: null
+ddp_find_unused_parameters:
+    value: false
+ddp_timeout:
+    value: 1800
+debug:
+    value: []
+decoder_start_token_id:
+    value: null
+deepspeed:
+    value: null
+disable_tqdm:
+    value: false
+diversity_penalty:
+    value: 0
+do_eval:
+    value: true
+do_predict:
+    value: false
+do_sample:
+    value: false
+do_train:
+    value: false
+dtype:
+    value: bfloat16
+early_stopping:
+    value: false
+encoder_no_repeat_ngram_size:
+    value: 0
+eos_token_id:
+    value: 128001
+eval_accumulation_steps:
+    value: null
+eval_delay:
+    value: 0
+eval_do_concat_batches:
+    value: true
+eval_on_start:
+    value: false
+eval_steps:
+    value: 200
+eval_strategy:
+    value: steps
+eval_use_gather_object:
+    value: false
+exponential_decay_length_penalty:
+    value: null
+finetuning_task:
+    value: null
+forced_bos_token_id:
+    value: null
+forced_eos_token_id:
+    value: null
+fp16:
+    value: false
+fp16_backend:
+    value: auto
+fp16_full_eval:
+    value: false
+fp16_opt_level:
+    value: O1
+fsdp:
+    value: []
+fsdp_config:
+    value:
+        min_num_params: 0
+        xla: false
+        xla_fsdp_grad_ckpt: false
+        xla_fsdp_v2: false
+fsdp_min_num_params:
+    value: 0
+fsdp_transformer_layer_cls_to_wrap:
+    value: null
+full_determinism:
+    value: false
+gradient_accumulation_steps:
+    value: 4
+gradient_checkpointing:
+    value: true
+gradient_checkpointing_kwargs:
+    value:
+        use_reentrant: false
+greater_is_better:
+    value: false
+group_by_length:
+    value: false
+half_precision_backend:
+    value: auto
+head_dim:
+    value: 128
+hidden_act:
+    value: silu
+hidden_size:
+    value: 4096
+hub_always_push:
+    value: false
+hub_model_id:
+    value: null
+hub_private_repo:
+    value: null
+hub_revision:
+    value: null
+hub_strategy:
+    value: every_save
+hub_token:
+    value: <HUB_TOKEN>
+id2label:
+    value:
+        "0": LABEL_0
+        "1": LABEL_1
+ignore_data_skip:
+    value: false
+include_for_metrics:
+    value: []
+include_inputs_for_metrics:
+    value: false
+include_num_input_tokens_seen:
+    value: "no"
+include_tokens_per_second:
+    value: false
+initializer_range:
+    value: 0.02
+intermediate_size:
+    value: 14336
+is_decoder:
+    value: false
+is_encoder_decoder:
+    value: false
+jit_mode_eval:
+    value: false
+label_names:
+    value: null
+label_smoothing_factor:
+    value: 0
+label2id:
+    value:
+        LABEL_0: 0
+        LABEL_1: 1
+learning_rate:
+    value: 0.0002
+length_column_name:
+    value: length
+length_penalty:
+    value: 1
+liger_kernel_config:
+    value: null
+load_best_model_at_end:
+    value: true
+local_rank:
+    value: 0
+log_level:
+    value: passive
+log_level_replica:
+    value: warning
+log_on_each_node:
+    value: true
+logging_dir:
+    value: ../01_outputs/llama3-1-8B-wikitext2-lora-finetuned/runs/Feb09_14-58-37_pim-gpu06
+logging_first_step:
+    value: false
+logging_nan_inf_filter:
+    value: true
+logging_steps:
+    value: 10
+logging_strategy:
+    value: steps
+lr_scheduler_type:
+    value: linear
+max_grad_norm:
+    value: 1
+max_length:
+    value: 20
+max_position_embeddings:
+    value: 131072
+max_steps:
+    value: -1
+metric_for_best_model:
+    value: loss
+min_length:
+    value: 0
+mlp_bias:
+    value: false
+model/num_parameters:
+    value: 1641233920
+model_type:
+    value: llama
+mp_parameters:
+    value: ""
+neftune_noise_alpha:
+    value: null
+no_cuda:
+    value: false
+no_repeat_ngram_size:
+    value: 0
+num_attention_heads:
+    value: 32
+num_beam_groups:
+    value: 1
+num_beams:
+    value: 1
+num_hidden_layers:
+    value: 32
+num_key_value_heads:
+    value: 8
+num_return_sequences:
+    value: 1
+num_train_epochs:
+    value: 3
+optim:
+    value: adamw_torch
+optim_args:
+    value: null
+optim_target_modules:
+    value: null
+output_attentions:
+    value: false
+output_dir:
+    value: ../01_outputs/llama3-1-8B-wikitext2-lora-finetuned
+output_hidden_states:
+    value: false
+output_scores:
+    value: false
+overwrite_output_dir:
+    value: false
+pad_token_id:
+    value: 128001
+parallelism_config:
+    value: null
+past_index:
+    value: -1
+peft_config:
+    value:
+        default:
+            auto_mapping: null
+            base_model_name_or_path: /home/sslunder52/project/vptq_transposed/01_outputs/Llama-3.1-8B/test6_PackedModel/v6_c8192_b16_och/2026-02-08-21-31-20/packed_model
+            bias: none
+            corda_config: null
+            eva_config: null
+            exclude_modules: null
+            fan_in_fan_out: false
+            inference_mode: false
+            init_lora_weights: true
+            layer_replication: null
+            layers_pattern: null
+            layers_to_transform: null
+            lora_alpha: 32
+            lora_bias: false
+            lora_dropout: 0.1
+            megatron_config: null
+            megatron_core: megatron.core
+            modules_to_save: null
+            peft_type: LORA
+            qalora_group_size: 16
+            r: 16
+            revision: null
+            runtime_config:
+                ephemeral_gpu_offload: false
+            target_modules:
+                - k_proj
+                - gate_proj
+                - v_proj
+                - down_proj
+                - o_proj
+                - q_proj
+                - up_proj
+            target_parameters: null
+            task_type: CAUSAL_LM
+            trainable_token_indices: null
+            use_dora: false
+            use_qalora: false
+            use_rslora: true
+per_device_eval_batch_size:
+    value: 4
+per_device_train_batch_size:
+    value: 4
+per_gpu_eval_batch_size:
+    value: null
+per_gpu_train_batch_size:
+    value: null
+prediction_loss_only:
+    value: false
+prefix:
+    value: null
+pretraining_tp:
+    value: 1
+problem_type:
+    value: null
+project:
+    value: huggingface
+push_to_hub:
+    value: false
+push_to_hub_model_id:
+    value: null
+push_to_hub_organization:
+    value: null
+push_to_hub_token:
+    value: <PUSH_TO_HUB_TOKEN>
+quantization_config:
+    value:
+        config_for_layers:
+            model.layers.0.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.0.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.0.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.0.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.0.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.0.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.0.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.1.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.1.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.1.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.1.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.1.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.1.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.1.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.2.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.2.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.2.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.2.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.2.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.2.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.2.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.3.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.3.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.3.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.3.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.3.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.3.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.3.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.4.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.4.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.4.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.4.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.4.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.4.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.4.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.5.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.5.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.5.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.5.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.5.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.5.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.5.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.6.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.6.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.6.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.6.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.6.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.6.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.6.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.7.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.7.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.7.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.7.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.7.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.7.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.7.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.8.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.8.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.8.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.8.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.8.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.8.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.8.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.9.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.9.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.9.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.9.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.9.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.9.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.9.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.10.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.10.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.10.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.10.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.10.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.10.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.10.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.11.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.11.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.11.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.11.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.11.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.11.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.11.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.12.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.12.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.12.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.12.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.12.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.12.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.12.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.13.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.13.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.13.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.13.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.13.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.13.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.13.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.14.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.14.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.14.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.14.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.14.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.14.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.14.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.15.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.15.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.15.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.15.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.15.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.15.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.15.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.16.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.16.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.16.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.16.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.16.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.16.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.16.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.17.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.17.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.17.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.17.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.17.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.17.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.17.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.18.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.18.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.18.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.18.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.18.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.18.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.18.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.19.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.19.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.19.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.19.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.19.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.19.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.19.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.20.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.20.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.20.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.20.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.20.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.20.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.20.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.21.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.21.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.21.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.21.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.21.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.21.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.21.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.22.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.22.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.22.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.22.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.22.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.22.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.22.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.23.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.23.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.23.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.23.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.23.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.23.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.23.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.24.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.24.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.24.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.24.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.24.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.24.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.24.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.25.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.25.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.25.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.25.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.25.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.25.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.25.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.26.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.26.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.26.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.26.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.26.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.26.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.26.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.27.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.27.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.27.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.27.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.27.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.27.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.27.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.28.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.28.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.28.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.28.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.28.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.28.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.28.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.29.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.29.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.29.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.29.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.29.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.29.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.29.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.30.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.30.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.30.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.30.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.30.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.30.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.30.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.31.mlp.down_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 887
+                in_features: 14336
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 144
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.31.mlp.gate_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.31.mlp.up_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 14336
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.31.self_attn.k_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.31.self_attn.o_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.31.self_attn.q_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 4096
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+            model.layers.31.self_attn.v_proj:
+                bias: false
+                enable_norm: false
+                enable_perm: true
+                enable_proxy_error: false
+                enable_residual: false
+                group_num: 16
+                group_size: 253
+                in_features: 4096
+                indices_as_float: null
+                is_indice_packed: true
+                norm_dim: 1
+                num_centroids:
+                    - 8192
+                    - 4096
+                num_res_centroids:
+                    - -1
+                    - -1
+                out_features: 1024
+                outlier_size: 48
+                vector_lens:
+                    - 4
+                    - 6
+                vector_quant_dim: out
+        quant_method: vptq
+ray_scope:
+    value: last
+remove_invalid_values:
+    value: false
+remove_unused_columns:
+    value: false
+repetition_penalty:
+    value: 1
+report_to:
+    value:
+        - wandb
+restore_callback_states_from_checkpoint:
+    value: false
+resume_from_checkpoint:
+    value: null
+return_dict:
+    value: true
+return_dict_in_generate:
+    value: false
+rms_norm_eps:
+    value: 1e-05
+rope_scaling:
+    value:
+        factor: 8
+        high_freq_factor: 4
+        low_freq_factor: 1
+        original_max_position_embeddings: 8192
+        rope_type: llama3
+rope_theta:
+    value: 500000
+run_name:
+    value: llama3-1-8B-wikitext2-lora-finetuned
+save_on_each_node:
+    value: false
+save_only_model:
+    value: false
+save_safetensors:
+    value: true
+save_steps:
+    value: 200
+save_strategy:
+    value: steps
+save_total_limit:
+    value: 10
+seed:
+    value: 42
+sep_token_id:
+    value: null
+skip_memory_metrics:
+    value: true
+suppress_tokens:
+    value: null
+task_specific_params:
+    value: null
+temperature:
+    value: 1
+tf_legacy_loss:
+    value: false
+tf32:
+    value: null
+tie_encoder_decoder:
+    value: false
+tie_word_embeddings:
+    value: false
+tokenizer_class:
+    value: null
+top_k:
+    value: 50
+top_p:
+    value: 1
+torch_compile:
+    value: false
+torch_compile_backend:
+    value: null
+torch_compile_mode:
+    value: null
+torch_empty_cache_steps:
+    value: null
+torchdynamo:
+    value: null
+torchscript:
+    value: false
+tpu_metrics_debug:
+    value: false
+tpu_num_cores:
+    value: null
+trackio_space_id:
+    value: trackio
+transformers_version:
+    value: 4.57.1
+typical_p:
+    value: 1
+use_bfloat16:
+    value: false
+use_cache:
+    value: false
+use_cpu:
+    value: false
+use_legacy_prediction_loop:
+    value: false
+use_liger_kernel:
+    value: false
+use_mps_device:
+    value: false
+vocab_size:
+    value: 128256
+warmup_ratio:
+    value: 0
+warmup_steps:
+    value: 100
+weight_decay:
+    value: 0

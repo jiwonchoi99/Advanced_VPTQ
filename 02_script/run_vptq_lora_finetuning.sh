@@ -4,12 +4,12 @@ set -euo pipefail
 if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
   # shellcheck disable=SC1090
   source "$HOME/anaconda3/etc/profile.d/conda.sh"
-  conda activate vptq_loraft || true
+  conda activate lora || true
 fi
 
 cd ../03_codes/LoRA_Finetuning
 export WANDB_PROJECT=LoRA_VPTQ_finetuning   
-export CUDA_VISIBLE_DEVICES=1,7                                                 
+export CUDA_VISIBLE_DEVICES=3,7                                                 
 NCCL_P2P_DISABLE=1                                                   
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True,max_split_size_mb:512
 python -m torch.distributed.run --nnodes=1 --nproc_per_node=2 --master_port=12355 LoRA_VPTQ_Trainer.py \
