@@ -178,3 +178,6 @@ anaconda3/
 csrc/*_hip*
 csrc/*.hip
 
+# wandb and outputs
+/wandb/
+*.outputs
