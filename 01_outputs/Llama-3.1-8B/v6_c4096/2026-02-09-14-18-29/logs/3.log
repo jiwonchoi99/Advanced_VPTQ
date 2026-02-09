@@ -1,0 +1,6 @@
+INFO - ----Quantizing on cuda:0----
+INFO - ----Quantizing layer 11 ...---- 2026-02-09 05:20:56 on cuda:0 dtype torch.bfloat16
+INFO - dict_keys(['self_attn.q_proj', 'self_attn.k_proj', 'self_attn.v_proj', 'self_attn.o_proj', 'mlp.gate_proj', 'mlp.up_proj', 'mlp.down_proj'])
+INFO - load Hessian from /home/sslunder41/project/VPTQ/hess/Hessians-Llama-31-8B-Instruct-6144-8k/11_qkv.pt
+INFO - load inv Hessian from /home/sslunder41/project/VPTQ/invhess/InvHessians-Llama-31-8B-Instruct-6144-8k/11_qkv.pt
+INFO - ----Quantizing llama ...---- 2026-02-09 05:21:02 11.self_attn.q_proj

@@ -108,14 +108,14 @@ def quant_llama(model, args, quant_args, dev='cuda'):
         if not is_layer_done(idx, args):
             pending_layers.append((idx, layer))
         
-    pdb.set_trace()
+    #pdb.set_trace()
 
     
     if len(pending_layers) == 0 or (args.eval_mode == True):
         print("All layers are already quantized.")
         model_name = model.model.config._name_or_path
         layers = model.model.layers
-        pdb.set_trace()
+        #pdb.set_trace()
 
         layer_state_dicts, layer_qlinear_args = load_all_qlinear_from_disk(args, layers)
         qmodel = get_quantized_llama(model_name, args.seq_len, layer_state_dicts, layer_qlinear_args)

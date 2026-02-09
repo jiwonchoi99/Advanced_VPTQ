@@ -20,49 +20,44 @@ c=4096 #codebook 에 있는 number of centroids
 gpu=1,3,6
 num_gpu=3 #위에 gpu 갯수랑 일치해야한다.
 
-do
-        
-        echo "Running Command 1"
+echo "Running Command 1"
 
-        CUDA_VISIBLE_DEVICES=${gpu} python /home/sslunder52/project/Advaced_VPTQ/03_codes/VPTQ/run_vptq.py \
-                --model_name meta-llama/Llama-3.1-8B \
-                --seq_len 2048 \
-                --quant_step 1 \
-                --blocksize 128 \
-                --output_dir /home/sslunder52/project/Advaced_VPTQ/01_outputs/Llama-3.1-8B/v${v}_c${c} \
-                --seed 0 \
-                --hessian_path /home/sslunder41/project/VPTQ/hess/Hessians-Llama-31-8B-Instruct-6144-8k \
-                --inv_hessian_path /home/sslunder41/project/VPTQ/invhess/InvHessians-Llama-31-8B-Instruct-6144-8k \
-                --num_gpus ${num_gpu} \
-                --eval_nsamples 128 \
-                --vector_lens 4 ${v} \
-                --num_centroids 4096 ${c} \
-                --outlier_size 0 \
-                --npercent 1 \
-                --num_res_centroids -1 -1 \
-                --group_num 16 \
-                --group_size -1 \
-                --kiter 100 \
-                --ktol 1e-5 \
-                --kmeans_mode hessian \
-                --enable_norm False \
-                --norm_dim 1 \
-                --save_model False \
-                --save_packed_model True \
-                --save_qlinear True \
-                --new_eval True \
-                --eval_mode False \
-                --enable_perm True \
-                --enable_residual False \
-                --vector_quant_dim out \
-                --enable_transpose True \
-                --bitwidth 8 \
-                --bsize 1024 \
-                | tee ../01_outputs/log/vptq_v4_6_c_8192_4096_och
-        
-        
+CUDA_VISIBLE_DEVICES=${gpu} python /home/sslunder52/project/Advaced_VPTQ/03_codes/VPTQ/run_vptq.py \
+        --model_name meta-llama/Llama-3.1-8B \
+        --seq_len 2048 \
+        --quant_step 1 \
+        --blocksize 128 \
+        --output_dir /home/sslunder52/project/Advaced_VPTQ/01_outputs/Llama-3.1-8B/v${v}_c${c} \
+        --seed 0 \
+        --hessian_path /home/sslunder41/project/VPTQ/hess/Hessians-Llama-31-8B-Instruct-6144-8k \
+        --inv_hessian_path /home/sslunder41/project/VPTQ/invhess/InvHessians-Llama-31-8B-Instruct-6144-8k \
+        --num_gpus ${num_gpu} \
+        --eval_nsamples 128 \
+        --vector_lens 4 ${v} \
+        --num_centroids 4096 ${c} \
+        --outlier_size 0 \
+        --npercent 1 \
+        --num_res_centroids -1 -1 \
+        --group_num 16 \
+        --group_size -1 \
+        --kiter 100 \
+        --ktol 1e-5 \
+        --kmeans_mode hessian \
+        --enable_norm False \
+        --norm_dim 1 \
+        --save_model False \
+        --save_packed_model True \
+        --save_qlinear True \
+        --new_eval True \
+        --eval_mode False \
+        --enable_perm True \
+        --enable_residual False \
+        --vector_quant_dim out \
+        --enable_transpose True \
+        --bitwidth 8 \
+        --bsize 1024 \
+                
 
-done
 
 # * : 주요 변수들
 #model_name meta-llama/Llama-3.1-8B : original model name from Hugging Face () 

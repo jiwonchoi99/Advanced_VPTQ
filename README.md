@@ -95,3 +95,41 @@ c=4096
 --bitwidth 16 \
 ...
 ```
+
+## Temrinal 에 나오는 결과 (성공적으로 VPTQ 가 작동할 때)
+- {} <= 중괄호 안에 있는 내용은 HJ가 적어둔 comment 이다. 실제 실행시킬때는 terminal 에 나오지 않는다.
+- 아래처럼 temrinal 에 뜨면 quantization 이 잘 진행될것이다.
+
+```
+(vptq) sslunder52@pim-gpu06:/home/sslunder52/project/Advaced_VPTQ/02_script$ ./run_vptq.sh {script 파일 실행!}
+
+
+Running
+
+
+Running Command 1
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 124.44it/s]
+model sequence length: 2048
+exp time: 2026-02-09 14:18:30 
+{script 에 적어둔 arguments 들이 잘못 들어간게 있는지 확인하기}
+args: VPTQArguments(model_name='meta-llama/Llama-3.1-8B', seq_len=2048, quant_step=1, percdamp=0.01, blocksize=128, output_dir='/home/sslunder52/project/Advaced_VPTQ/01_outputs/Llama-3.1-8B/v6_c4096/2026-02-09-14-18-29', seed=0, eval=False, new_eval=True, save_model=False, save_packed_model=True, disable_actorder=False, hessian_path='/home/sslunder41/project/VPTQ/hess/Hessians-Llama-31-8B-Instruct-6144-8k', inv_hessian_path='/home/sslunder41/project/VPTQ/invhess/InvHessians-Llama-31-8B-Instruct-6144-8k', num_gpus=3, eval_nsamples=128, save_qlinear=True, absorb_perm=False, enable_residual=False, eval_mode=False, outlier_size=0)
+quant_args: QuantizationArguments(vector_lens=[4, 6], num_centroids=[4096, 4096], num_res_centroids=[-1, -1], npercent=1.0, group_num=16, group_size=-1, kiter=100, ktol=1e-05, kseed=0, kmeans_mode='hessian', kmeans_alpha=0, enable_norm=False, norm_dim=1, enable_perm=True, enable_transpose=True, vector_quant_dim='out', bitwidth=8, bsize=1024)
+Starting VPTQ...
+model dtype: torch.bfloat16
+
+----quantization start ...---- 2026-02-09 14:20:24
+gpu 0 tasks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+gpu 1 tasks: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+gpu 2 tasks: [22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+gpu 1 {위에 gpu 0 tasks 가 1번 gpu 에 할당된다}
+gpu 3 
+gpu 6
+INFO - ----Quantizing on cuda:0----
+INFO - ----Quantizing layer 0 ...---- 2026-02-09 05:20:46 on cuda:0 dtype torch.bfloat16
+[['self_attn.q_proj', 'self_attn.k_proj', 'self_attn.v_proj', 'self_attn.o_proj', 'mlp.gate_proj', 'mlp.up_proj', 'mlp.down_proj']]
+INFO - dict_keys(['self_attn.q_proj', 'self_attn.k_proj', 'self_attn.v_proj', 'self_attn.o_proj', 'mlp.gate_proj', 'mlp.up_proj', 'mlp.down_proj'])
+INFO - load Hessian from /home/sslunder41/project/VPTQ/hess/Hessians-Llama-31-8B-Instruct-6144-8k/0_qkv.pt
+INFO - load inv Hessian from /home/sslunder41/project/VPTQ/invhess/InvHessians-Llama-31-8B-Instruct-6144-8k/0_qkv.pt
+... 
+```

@@ -1,0 +1,16 @@
+INFO - ----Quantizing on cuda:0----
+INFO - ----Quantizing layer 0 ...---- 2026-02-09 05:20:46 on cuda:0 dtype torch.bfloat16
+INFO - dict_keys(['self_attn.q_proj', 'self_attn.k_proj', 'self_attn.v_proj', 'self_attn.o_proj', 'mlp.gate_proj', 'mlp.up_proj', 'mlp.down_proj'])
+INFO - load Hessian from /home/sslunder41/project/VPTQ/hess/Hessians-Llama-31-8B-Instruct-6144-8k/0_qkv.pt
+INFO - load inv Hessian from /home/sslunder41/project/VPTQ/invhess/InvHessians-Llama-31-8B-Instruct-6144-8k/0_qkv.pt
+INFO - ----Quantizing llama ...---- 2026-02-09 05:20:55 0.self_attn.q_proj
+INFO - kmeans_mode: hessian, enable_perm: True, enable_norm: False, 
+INFO - data shape: torch.Size([4096, 4096]), weights shape: torch.Size([4096, 4096])
+INFO - group_size: 253 number of groups: 16
+INFO - idx: 0, sub_vectors shape: torch.Size([49152, 4])
+INFO - cuml kmeans 25 iterations, error 6.99282693862915
+INFO - quantized_centroids bitwidth = 8 bsize = 1024
+
+INFO - idx: 0, quant_data shape: torch.Size([49152, 4])
+INFO - idx: 0, quant_data shape: torch.Size([4096, 48])
+INFO - idx: 1, sub_vectors shape: torch.Size([172799, 6])
