@@ -6,28 +6,28 @@ directory where the results of quantization are saved
 ### Save 형식
 [model_name] > v[vector_length]_c[number_of_centroids] > implemented_time
 - logs : 각 gpu 의 로그 파일
-- model : vector quantize 된 model (created only when save_model = True)
-- packed_model : index 가 packed 된 vector quantize 된 model 인데 (created only when save_packed_model = True)
+- model : Vector Quantization 이 적용된 model (script 에서 save_model = True 로 두었을때만 생성된다)
+- packed_model : index packing 이 적용된 vector quantize model (script 에서 save_packed_model = True 로 두었을때만 생성된다)
 - ppl_results.json : perplexity result of quantized model
 
 ## 02_script
-- run_vptq.sh : script file to implement VPTQ
-- run_vptq_lora_finetuning.sh : script file to finetune LoRA with vector quantized base model
+- run_vptq.sh : 특정 모델을 VPTQ 로 Vector Quantize 할 때 쓰이는 script
+- run_vptq_lora_finetuning.sh : VPTQ 로 Vector Quantize 된 모델을 LoRA Finetuning 시킬 떄 쓰이는 script
 
 ## 03_codes
-LoRA_Finetuning : codes for LoRA_Finetuning
-VPTQ : codes for VPTQ
+- LoRA_Finetuning : codes for LoRA_Finetuning
+- VPTQ : codes for VPTQ
 
 ---
 
 # 🚀 How to implement VPTQ quantization
-1. 02_scripts -> run_vptq.sh 스크립트 파일 열기
+02_scripts -> run_vptq.sh 스크립트 파일 열어서 변수들 설정하기!
 
 ## Multi-gpu 세팅
 1. line 20 에 사용할 GPU number 랑 line21 에 몇 개 gpu 사용하는지 적기
 - eg. 0번, 1번 GPU 사용하려면 gpu=0,1 & num_gpu=2
 
-## 주요 변수들 설정
+## 주요 Quantization 변수들 설정
 1. vector_lens (outlier_vector_length vector_length) : 한번에 묶을 벡터의 길이를 설정
 > outlier 기능을 사용하지 않을때는 outlier_vector_length = -1 로 두기
 2. num_centroids (outlier_centroids centroids) : 하나의 코드북이 저장할 centroids 갯수 설정
@@ -50,7 +50,7 @@ VPTQ : codes for VPTQ
 v=4
 c=4096 
 ...
---vector_lens -1 ${v} \
+--vector_lens -1 ${v} \ 
 --num_centroids -1 ${c} \
 ...
 --npercent 0 \
@@ -68,11 +68,11 @@ c=4096
 논문에서 나온 Table 8 의 Llama3-8B 2.24bit 로 설정하기 위해서는 아래와 같이 설정하기 (2.24 bpv)
 - outlier vector length = 4, vector length = 6
 - number of outlier centroids = 4096, number of centroids = 4096
-- npercent = 1 (outlier percent)
+- npercent = 1 (outlier 는 전체의 1 percent)
 - residual quantization 기능 끄기 (num_red_centrodis 를 -1 -1 로 세팅)
 - number of groups = 16
-- quantization dimension = och
-- bitwidth = 16 (no codebook quantization)
+- quantization dimension = och (vector_quant_dim = out & enable_transpose = True 로 두기)
+- bitwidth = 16 (codebook quantization 실행 안 함)
 
 ```
 v=6
