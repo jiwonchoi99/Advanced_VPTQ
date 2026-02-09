@@ -18,8 +18,7 @@ directory where the results of quantization are saved
 LoRA_Finetuning : codes for LoRA_Finetuning
 VPTQ : codes for VPTQ
 
-
-
+---
 
 # 🚀 How to implement VPTQ quantization
 1. 02_scripts -> run_vptq.sh 스크립트 파일 열기
@@ -41,13 +40,13 @@ VPTQ : codes for VPTQ
 6. enable_transpose : ich 방향으로 벡터를 묶으면 enable_transpose = False, och 방향으로 묶으면 True 로 두기
 7. bitwidth : codebook quantize 를 몇비트로 할지 정하기 (16으로 두면 codebook quantization 이 실행되지 않는다)
 
-
+---
 
 ## 실행 예시
 - outlier 과 residual vector quantization 기능 끄고, bpv 를 3으로 두기 위해 vector length = 4, codebook size = 2^12, number of groups = 4 으로 설정한 뒤에, och 방향으로 벡터를 묶어서 VPTQ 를 실행하고, codeobok quantization 은 8bit 로 실행하려면 아래와 같이 변수를 설정한다. 
 - 그리고 terminal 에 ./run_vptq.sh 입력
 
-    '''
+'''
     v=4
     c=4096 
     ...
@@ -62,20 +61,20 @@ VPTQ : codes for VPTQ
     --enable_transpose True \
     --bitwidth 8 \
     ...
-    '''
+'''
 
 
 ## 다른 예시
-- 논문에서 나온 Table 8 의 Llama3-8B 2.24bit 로 설정하기 위해서는 아래와 같이 설정하기 (2.24 bpv)
-> outlier vector length = 4, vector length = 6
-> number of outlier centroids = 4096, number of centroids = 4096
-> npercent = 1 (outlier percent)
-> residual quantization 기능 off
-> number of groups = 16
-> quantization dimension = och
-> bitwidth = 16 (no codebook quantization)
+논문에서 나온 Table 8 의 Llama3-8B 2.24bit 로 설정하기 위해서는 아래와 같이 설정하기 (2.24 bpv)
+- outlier vector length = 4, vector length = 6
+- number of outlier centroids = 4096, number of centroids = 4096
+- npercent = 1 (outlier percent)
+- residual quantization 기능 off
+- number of groups = 16
+- quantization dimension = och
+- bitwidth = 16 (no codebook quantization)
 
-    '''
+'''
     v=6
     c=4096 
     ...
@@ -90,4 +89,4 @@ VPTQ : codes for VPTQ
     --enable_transpose True \
     --bitwidth 16 \
     ...
-    '''
+'''
