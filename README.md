@@ -5,6 +5,7 @@ directory where the results of quantization are saved
 
 ### Save 형식
 [model_name] > v[vector_length]_c[number_of_centroids] > implemented_time
+
 예를 들어 /01_outputs/Llama-3.1-8B/v4_c4096/2026-01-28-13-30-02 이면, Llama-3.1-8B 모델을 vector length 4와 number of centroids 를 4096 으로 VPTQ 를 적용한 모델이고 2026-01-28 13시30분02초에 실행 시작했던 파일이다.
 - logs : 각 gpu 의 로그 파일
 - model : Vector Quantization 이 적용된 model (script 에서 save_model = True 로 두었을때만 생성된다)
@@ -26,20 +27,23 @@ directory where the results of quantization are saved
 
 ## Multi-gpu 세팅
 1. line 20 에 사용할 GPU number 랑 line21 에 몇 개 gpu 사용하는지 적기
-- eg. 0번, 1번 GPU 사용하려면 gpu=0,1 & num_gpu=2
+```
+gpu=1,3,6
+num_gpu=3
+```
 
 ## 주요 Quantization 변수들 설정
-1. vector_lens (outlier_vector_length vector_length) : 한번에 묶을 벡터의 길이를 설정
+1. vector_lens (outlier_vector_length   vector_length) : 한번에 묶을 벡터의 길이를 설정
 > outlier 기능을 사용하지 않을때는 outlier_vector_length = -1 로 두기
-2. num_centroids (outlier_centroids centroids) : 하나의 코드북이 저장할 centroids 갯수 설정
+2. num_centroids (outlier_centroids   centroids) : 하나의 코드북이 저장할 centroids 개수 설정
 > outlier 기능을 사용하지 않을때는 outlier_centroids = -1 로 두기
 3. npercent (int) : 전체 weight 에서 int % 만큼을 outlier 로 설정한다. 
-4. num_red_centroids (outlier_residual_centroids residual_centroids) : residual quantization 기능을 켜두었을때 residual quantization 에 사용할 하나의 코드북이 저장 할 centroids 갯수 설정
+4. num_red_centroids (outlier_residual_centroids   residual_centroids) : residual quantization 에 사용 할 하나의 코드북이 저장 할 centroids 개수 설정
 > residual quantization 기능을 사용하지 않을땐 -1 -1 로 두기
 5. vector_quant_dim (in 또는 out) : VQ dimension 정하기
 > in = ich 방향으로 벡터 묶기 / out = och 방향으로 벡터 묶기
-6. enable_transpose : ich 방향으로 벡터를 묶으면 enable_transpose = False, och 방향으로 묶으면 True 로 두기
-7. bitwidth : codebook quantize 를 몇비트로 할지 정하기 (16으로 두면 codebook quantization 이 실행되지 않는다)
+6. enable_transpose (bool) : ich 방향으로 벡터를 묶으면 enable_transpose = False, och 방향으로 묶으면 True 로 두기
+7. bitwidth (int) : codebook quantize 를 몇비트로 할지 정하기 (16으로 두면 codebook quantization 이 실행되지 않는다)
 
 ---
 
