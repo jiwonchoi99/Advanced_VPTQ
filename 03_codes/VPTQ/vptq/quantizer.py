@@ -193,7 +193,7 @@ class NPVectorQuantizer:
     """
     def quantize_centroids(self, centroids, bitwidth, bsize):
         import os
-        save_dir = "./outputs/centroid_debug"
+        save_dir = "../01_outputs/centroid_debug"
         flag_file = os.path.join(save_dir, ".saved")
         first_call = False
         # YERI: save centroids to numpy only once (for debugging)

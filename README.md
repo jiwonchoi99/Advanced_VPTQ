@@ -2,14 +2,15 @@
 
 ## 01_outputs
 directory where the results of quantization are saved
+- centroids_debug 는 codebook quantization 을 했을 때 맨 처음 quantize 된 codebook 의 centroid 값을 반환하는 디렉토리이다. (디버깅 용도로 만들어 두었다)
 
 ### Save 형식
 [model_name] > v[vector_length]_c[number_of_centroids] > implemented_time
 
 예를 들어 /01_outputs/Llama-3.1-8B/v4_c4096/2026-01-28-13-30-02 이면, Llama-3.1-8B 모델을 vector length 4와 number of centroids 를 4096 으로 VPTQ 를 적용한 모델이고 2026-01-28 13시30분02초에 실행 시작했던 파일이다.
 - logs : 각 gpu 의 로그 파일
-- model : Vector Quantization 이 적용된 model (script 에서 save_model = True 로 두었을때만 생성된다)
-- packed_model : index packing 이 적용된 vector quantize model (script 에서 save_packed_model = True 로 두었을때만 생성된다)
+- model : Vector Quantization 이 적용된 model, configuration 파일, tokenizer 등등 이 들어있는 디렉토리 (script 에서 save_model = True 로 두었을때만 생성된다)
+- packed_model : index packing 이 적용된 vector quantize model, configuration 파일, tokenizer 등등 이 들어있는 디렉토리 (script 에서 save_packed_model = True 로 두었을때만 생성된다)
 - ppl_results.json : perplexity result of quantized model
 
 ## 02_script
@@ -21,6 +22,7 @@ directory where the results of quantization are saved
 - VPTQ : codes for VPTQ
 
 ---
+
 
 # 🚀 How to implement VPTQ quantization
 02_scripts -> run_vptq.sh 스크립트 파일 열어서 변수들 설정하기!
@@ -50,8 +52,9 @@ num_gpu=3
 ## 실행 예시
 - outlier 과 residual vector quantization 기능 끄고, bpv 를 3으로 두기 위해 vector length = 4, codebook size = 2^12, number of groups = 4 으로 설정한 뒤에, och 방향으로 벡터를 묶어서 VPTQ 를 실행하고, codeobok quantization 은 8bit 로 실행하려면 아래와 같이 변수를 설정한다. 
 - 그리고 terminal 에 ./run_vptq.sh 입력
-
+- 02_script/run_vptq_3.015bit.sh 파일 예시
 ```
+<run_vptq.sh 파일에서>
 v=4
 c=4096 
 ...
@@ -60,17 +63,18 @@ c=4096
 ...
 --npercent 0 \
 --num_res_centroids -1 -1 \
---group_num 4 \
+--group_num 16 \
 ...
 --vector_quant_dim out \
 --enable_transpose True \
---bitwidth 8 \
+--bitwidth 16 \
 ...
 ```
 
 
 ## 다른 예시
 논문에서 나온 Table 8 의 Llama3-8B 2.24bit 로 설정하기 위해서는 아래와 같이 설정하기 (2.24 bpv)
+- 02_script/run_vptq_2.24bit.sh 파일 예시
 - outlier vector length = 4, vector length = 6
 - number of outlier centroids = 4096, number of centroids = 4096
 - npercent = 1 (outlier 는 전체의 1 percent)
@@ -80,6 +84,7 @@ c=4096
 - bitwidth = 16 (codebook quantization 실행 안함)
 
 ```
+<run_vptq.sh 파일에서>
 v=6
 c=4096 
 ...
@@ -101,6 +106,7 @@ c=4096
 - 아래처럼 temrinal 에 뜨면 quantization 이 잘 진행될 것이다.
 
 ```
+<터미널에 나오는 실행 결과>
 (vptq) sslunder52@pim-gpu06:/home/sslunder52/project/Advaced_VPTQ/02_script$ ./run_vptq.sh
 
 
