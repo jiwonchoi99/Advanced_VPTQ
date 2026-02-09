@@ -5,6 +5,7 @@ directory where the results of quantization are saved
 
 ### Save 형식
 [model_name] > v[vector_length]_c[number_of_centroids] > implemented_time
+예를 들어 /01_outputs/Llama-3.1-8B/v4_c4096/2026-01-28-13-30-02 이면, Llama-3.1-8B 모델을 vector length 4와 number of centroids 를 4096 으로 VPTQ 를 적용한 모델이고 2026-01-28 13시30분02초에 실행 시작했던 파일이다.
 - logs : 각 gpu 의 로그 파일
 - model : Vector Quantization 이 적용된 model (script 에서 save_model = True 로 두었을때만 생성된다)
 - packed_model : index packing 이 적용된 vector quantize model (script 에서 save_packed_model = True 로 두었을때만 생성된다)
