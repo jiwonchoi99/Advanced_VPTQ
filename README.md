@@ -30,14 +30,14 @@ VPTQ : codes for VPTQ
 
 ## 주요 변수들 설정
 1. vector_lens (outlier_vector_length vector_length) : 한번에 묶을 벡터의 길이를 설정
-- outlier 기능을 사용하지 않을때는 outlier_vector_length = -1 로 두기
+> outlier 기능을 사용하지 않을때는 outlier_vector_length = -1 로 두기
 2. num_centroids (outlier_centroids centroids) : 하나의 코드북이 저장할 centroids 갯수 설정
-- outlier 기능을 사용하지 않을때는 outlier_centroids = -1 로 두기
+> outlier 기능을 사용하지 않을때는 outlier_centroids = -1 로 두기
 3. npercent (int) : 전체 weight 에서 int % 만큼을 outlier 로 설정한다. 
 4. num_red_centroids (outlier_residual_centroids residual_centroids) : residual quantization 기능을 켜두었을때 residual quantization 에 사용할 하나의 코드북이 저장 할 centroids 갯수 설정
-- residual quantization 기능을 사용하지 않을땐 -1 -1 로 두기
+> residual quantization 기능을 사용하지 않을땐 -1 -1 로 두기
 5. vector_quant_dim (in 또는 out) : VQ dimension 정하기
-- in = ich 방향으로 벡터 묶기 / out = och 방향으로 벡터 묶기
+> in = ich 방향으로 벡터 묶기 / out = och 방향으로 벡터 묶기
 6. enable_transpose : ich 방향으로 벡터를 묶으면 enable_transpose = False, och 방향으로 묶으면 True 로 두기
 7. bitwidth : codebook quantize 를 몇비트로 할지 정하기 (16으로 두면 codebook quantization 이 실행되지 않는다)
 
@@ -47,7 +47,7 @@ VPTQ : codes for VPTQ
 - outlier 과 residual vector quantization 기능 끄고, bpv 를 3으로 두기 위해 vector length = 4, codebook size = 2^12, number of groups = 4 으로 설정한 뒤에, och 방향으로 벡터를 묶어서 VPTQ 를 실행하고, codeobok quantization 은 8bit 로 실행하려면 아래와 같이 변수를 설정한다. 
 - 그리고 terminal 에 ./run_vptq.sh 입력
 
-...
+
     v=4
     c=4096 
     ...
@@ -74,7 +74,7 @@ VPTQ : codes for VPTQ
 - quantization dimension = och
 - bitwidth = 16 (no codebook quantization)
 
-...
+
     v=6
     c=4096 
     ...
